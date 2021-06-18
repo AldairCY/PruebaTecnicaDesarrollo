@@ -1,0 +1,27 @@
+[
+    {
+        "id": "01",
+        "imagen": "https://www.banrep.gov.co/sites/default/files/paginas/nueva_50_sello_235_1.jpg",
+        "valor": "50"
+    },
+    {
+        "id": "02",
+        "imagen": "https://www.banrep.gov.co/sites/default/files/paginas/nueva_100_sello_235.jpg",
+        "valor": "100"
+    },
+    {
+        "id": "03",
+        "imagen": "https://www.banrep.gov.co/sites/default/files/paginas/nueva_200_sello_235.jpg",
+        "valor": "200"
+    },
+    {
+        "id": "04",
+        "imagen": "https://www.banrep.gov.co/sites/default/files/paginas/nueva_500_sello_235.jpg",
+        "valor": "500"
+    },
+    {
+        "id": "05",
+        "imagen": "https://www.banrep.gov.co/sites/default/files/paginas/nueva_1000_sello_235.jpg",
+        "valor": "1000"
+    }
+]
