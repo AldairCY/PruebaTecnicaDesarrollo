@@ -1,12 +1,14 @@
 <template>
+<div>
     <div class="card my-5">
         <div class="card-body">
             <div align="center">
-            <img :src="moneda.imagen" height="180">
+                <img :src="moneda.imagen" width="150" height="140">
             </div>
-            <button @click="agregarMoneda(moneda)" class="btn btn-primary form-control">Introducir Moneda</button>
+            <button v-on:click="agregarMoneda(moneda)" class="btn btn-primary form-control">Introducir Moneda</button>        
         </div>
     </div>
+</div>
 </template>
 
 <script>

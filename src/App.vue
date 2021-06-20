@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-md-7">
         <div class="row">
-          <div class="col-md-6" v-for="mone in monedas" :key="mone.id">
+          <div class="col-md-4" v-for="mone in monedas" :key="mone.id">
             <moneda :moneda="mone" v-on:agregar-moneda="agregarMone"></moneda>
           </div>
         </div>

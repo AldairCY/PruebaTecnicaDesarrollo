@@ -1,20 +1,27 @@
 <template>
-    <div>
-        <ul class="list-group">
+    <div class="row">
+        <div class="col-md-6">
+        <!--<ul class="list-group">
             <li class="list-group-item" v-for="item in items" :key="item.id">
                 $ {{ item.valor }}
             </li>
-        </ul>
-        <div class="card p-4 my-5">
-            <h4 class="text-center">Total Dinero: $ {{ totalDineroAcu }} </h4>
+        </ul>-->
+            <div class="card p-5">
+                <h5 class="text-center">Total Dinero:</h5><br/>
+                <h3 class="text-center">$ {{ totalDineroAcu }} </h3>
+            </div>
         </div>
-        <div class="card p-4 my-5">
-            <h4 class="text-center">Dentro de la alcancia hay: {{ totalMonedas }} monedas</h4>
+        <div class="col-md-6">
+            <div class="card p-3">
+                <h5 class="text-center">Dentro de la alcancia hay:</h5><br/>
+                <h3 class="text-center">{{ totalMonedas }} monedas</h3>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+
 export default {
     name: 'Alcancia',
     props: ['items'],
@@ -23,7 +30,7 @@ export default {
             return this.items.reduce((acumulador,item) => acumulador + Number(item.valor),0)
         },
         totalMonedas(){
-            return this.contador++
+            return this.items.reduce((acumulador) => acumulador + Number(1),0)
         }
     }
 }
